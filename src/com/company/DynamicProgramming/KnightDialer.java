@@ -40,11 +40,10 @@ public class KnightDialer {
         long sum =0;
         for(int j=0;j<10;j++){
             sum = sum + c[N][j];
+            sum = sum%1000000007;
         }
 
-        long ans =  sum%1000000007;
-
-        return (int) ans;
+        return (int) sum;
     }
 
     public static void main(String[] args){
