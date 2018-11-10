@@ -3,7 +3,7 @@ package com.company.DynamicProgramming;
 public class KnightDialer {
 
 
-    public static long helper(int N, long[][] c, int i, int[] a, int[][] b){
+    public static int helper(int N, int[][] c, int i, int[] a, int[][] b){
 
         if(i>9)
             return 0;
@@ -30,23 +30,22 @@ public class KnightDialer {
         int[] a = {2,2,2,2,3,0,3,2,2,2};
         int[][] b = {{4,6},{6,8},{7,9},{4,8},{0,3,9},{},{1,7,0},{2,6},{1,3},{2,4}};
 
-        long[][] c = new long[N+1][10];
+        int[][] c = new int[N+1][10];
 
 
         for(int j=0;j<10;j++){
             c[N][j] = helper(N,c,j,a,b);
         }
 
-        long sum =0;
+        int sum =0;
         for(int j=0;j<10;j++){
-            sum = sum + c[N][j];
-            sum = sum%1000000007;
+            sum = (sum + c[N][j])%1000000007;
         }
 
-        return (int) sum;
+        return sum;
     }
 
     public static void main(String[] args){
-        System.out.print(knightDialer(161));
+        System.out.print(knightDialer(3));
     }
 }
