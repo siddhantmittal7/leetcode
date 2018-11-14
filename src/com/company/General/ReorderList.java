@@ -20,9 +20,6 @@ public class ReorderList {
 
         HashMap<Integer,ListNode> detect = new HashMap<Integer,ListNode>();
 
-        detect.size();
-        detect.re
-
         int size = 0;
 
         if(head == null){
