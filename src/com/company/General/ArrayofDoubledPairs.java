@@ -7,30 +7,6 @@ import java.util.Set;
 
 public class ArrayofDoubledPairs {
 
-    public static int findmatch(int[] A, int value, int index, Set<Integer> posUsed){
-
-        if(!posUsed.contains(index)){
-            if(index == 0 || index == A.length-1){
-                if(A[index] == value) {
-                    return index;
-                }
-                else{
-                    return -1;
-                }
-            }
-
-            if(A[index] == value){
-                return index;
-            }else if (A[index] > value){
-                return findmatch(A, value, index/2,posUsed);
-            }else{
-                return findmatch(A, value, A.length-index/2,posUsed);
-            }
-        }else{
-            return -1;
-        }
-
-    }
 
     public static boolean canReorderDoubled(int[] A) {
 
@@ -50,17 +26,33 @@ public class ArrayofDoubledPairs {
         HashMap<Integer,Integer> check = new HashMap<Integer,Integer>();
 
         for(int i=0;i<A.length;i++){
-            if(!posUsed.contains(i)){
-                int pair1 = A[i];
-                int pos = findmatch(A,2*pair1,A.length/2,posUsed);
-                if( pos > -1){
-                    if(i != pos && !posUsed.contains(pos)){
-                        posUsed.add(i);
-                        posUsed.add(pos);
-                        count++;
-                    }
-                }
+            if(check.containsKey(A[i])){
+                int value = check.get(A[i]);
+                check.remove(A[i]);
+                check.put(A[i],value+1);
+            }else{
+                check.put(A[i],1);
             }
+        }
+
+
+
+        for(int i=0;i<A.length;i++){
+                int pair1 = A[i];
+                if(check.containsKey(2*A[i])) {
+                    int value = check.get(2*A[i]);
+                    check.remove(2*A[i]);
+                    if (A[i] == 2 * A[i]) {
+                        value = value - 2;
+                    } else {
+                        value = value - 1;
+                    }
+
+                    if (value > 0) {
+                        check.put(2*A[i], value);
+                    }
+                    count++;
+                }
         }
 
        if(count == numPairs){
@@ -71,7 +63,7 @@ public class ArrayofDoubledPairs {
     }
 
     public static void main(String[] args){
-        int[] a = {0,0,0,0,0,0};
+        int[] a = {1,2,4,8};
         System.out.println(canReorderDoubled(a));
     }
 }
