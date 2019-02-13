@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4985213a-0634-49a0-ae45-a8594148e1d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/General/Array_form.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/General/EqualityEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/General/MaxWeight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/General/MinimunParanthesesAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/General/MissingWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/General/Sameregions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/DynamicProgramming/SubarrayswithKDifferentIntegers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/General/BrokenCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/General/FindAndReplacePattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/General/MaximumArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testPrograms/com/company/General/RomanToInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testPrograms/com/company/General/RomanToInt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +23,9 @@
       <FILTER>com.company.General.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/testPrograms$DecodeString.ic" NAME="DecodeString Coverage Results" MODIFIED="1545289190727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.General.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/testPrograms$FindAndReplacePattern.ic" NAME="FindAndReplacePattern Coverage Results" MODIFIED="1549992110310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.company.General.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/testPrograms$ArrayofDoubledPairs.ic" NAME="ArrayofDoubledPairs Coverage Results" MODIFIED="1544328886001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -56,26 +56,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="64688" />
+          <entry key="java" value="67284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="64688" />
+          <entry key="JAVA" value="67284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="ex" value="1" />
-          <entry key="java" value="116" />
+          <entry key="java" value="121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Elixir file" value="1" />
-          <entry key="JAVA" value="116" />
+          <entry key="JAVA" value="121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/General/Array_form.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="15">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#280#289#0" expanded="true" />
@@ -98,13 +98,72 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/DynamicProgramming/SubarrayswithKDifferentIntegers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#238#247#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/General/MaximumArea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="50" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/General/FindAndReplacePattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="44" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#266#274#0" expanded="true" />
+                <element signature="e#349#371#0" expanded="true" />
+                <element signature="e#506#528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Graph/NumberOfIslands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/General/EqualityEquation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="97">
               <caret line="55" selection-start-line="55" selection-end-line="73" selection-end-column="17" />
               <folding>
                 <element signature="e#202#222#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/General/BrokenCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,10 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/General/ReorderLogFiles.java" />
-        <option value="$PROJECT_DIR$/src/com/company/General/MinimumAreaRectangle.java" />
-        <option value="$PROJECT_DIR$/src/com/company/DynamicProgramming/DistinctSubsequencesII.java" />
-        <option value="$PROJECT_DIR$/src/com/company/General/LinkedListCycleII.java" />
         <option value="$PROJECT_DIR$/src/com/company/Graph/Preorder.java" />
         <option value="$PROJECT_DIR$/src/com/company/Graph/BinaryTreePostOrderTraversal.java" />
         <option value="$PROJECT_DIR$/src/com/company/General/ReorderList.java" />
@@ -176,8 +231,12 @@
         <option value="$PROJECT_DIR$/src/com/company/General/MinimunParanthesesAdd.java" />
         <option value="$PROJECT_DIR$/src/com/company/General/MissingWords.java" />
         <option value="$PROJECT_DIR$/src/com/company/General/Sameregions.java" />
-        <option value="$PROJECT_DIR$/src/com/company/General/Array_form.java" />
         <option value="$PROJECT_DIR$/src/com/company/General/EqualityEquation.java" />
+        <option value="$PROJECT_DIR$/src/com/company/General/BrokenCalculator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/General/Array_form.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DynamicProgramming/SubarrayswithKDifferentIntegers.java" />
+        <option value="$PROJECT_DIR$/src/com/company/General/MaximumArea.java" />
+        <option value="$PROJECT_DIR$/src/com/company/General/FindAndReplacePattern.java" />
       </list>
     </option>
   </component>
@@ -242,7 +301,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="c[i][j&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549856173558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550020594377" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,9 +315,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EqualityEquation">
-    <configuration name="Array_form" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.General.Array_form" />
+  <component name="RunManager" selected="Application.FindAndReplacePattern">
+    <configuration name="BrokenCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.General.BrokenCalculator" />
       <module name="testPrograms" />
       <extension name="coverage">
         <pattern>
@@ -283,8 +342,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxWeight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.General.MaxWeight" />
+    <configuration name="FindAndReplacePattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.General.FindAndReplacePattern" />
       <module name="testPrograms" />
       <extension name="coverage">
         <pattern>
@@ -296,8 +355,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MissingWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.General.MissingWords" />
+    <configuration name="MaximumArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.General.MaximumArea" />
       <module name="testPrograms" />
       <extension name="coverage">
         <pattern>
@@ -309,12 +368,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sameregions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.General.Sameregions" />
+    <configuration name="SubarrayswithKDifferentIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.DynamicProgramming.SubarrayswithKDifferentIntegers" />
       <module name="testPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.General.*" />
+          <option name="PATTERN" value="com.company.DynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,19 +382,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MaxWeight" />
-      <item itemvalue="Application.Sameregions" />
-      <item itemvalue="Application.MissingWords" />
-      <item itemvalue="Application.Array_form" />
       <item itemvalue="Application.EqualityEquation" />
+      <item itemvalue="Application.BrokenCalculator" />
+      <item itemvalue="Application.SubarrayswithKDifferentIntegers" />
+      <item itemvalue="Application.MaximumArea" />
+      <item itemvalue="Application.FindAndReplacePattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindAndReplacePattern" />
+        <item itemvalue="Application.MaximumArea" />
+        <item itemvalue="Application.SubarrayswithKDifferentIntegers" />
+        <item itemvalue="Application.BrokenCalculator" />
         <item itemvalue="Application.EqualityEquation" />
-        <item itemvalue="Application.Array_form" />
-        <item itemvalue="Application.Sameregions" />
-        <item itemvalue="Application.MissingWords" />
-        <item itemvalue="Application.MaxWeight" />
       </list>
     </recent_temporary>
   </component>
@@ -365,8 +424,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35558584" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40326977" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35558584" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40326977" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1003,6 +1062,42 @@
           <properties />
           <option name="timeStamp" value="291" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/General/BrokenCalculator.java</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/DynamicProgramming/SubarrayswithKDifferentIntegers.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/DynamicProgramming/SubarrayswithKDifferentIntegers.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/General/MaximumArea.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/General/FindAndReplacePattern.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/General/FindAndReplacePattern.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/company/General/Problem.java</url>
           <line>112</line>
@@ -1072,41 +1167,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Graph/BinaryTreePostOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DynamicProgramming/LongestCommonSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Utility/TreeHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/General/InsertionSortList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Graph/Preorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Graph/SymmetricTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -1446,10 +1506,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/General/BrokenCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/General/Array_form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="15">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#280#289#0" expanded="true" />
@@ -1459,12 +1530,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Graph/NumberOfIslands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/General/EqualityEquation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="55" selection-start-line="55" selection-end-line="73" selection-end-column="17" />
           <folding>
             <element signature="e#202#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DynamicProgramming/SubarrayswithKDifferentIntegers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#238#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/General/MaximumArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="50" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/General/FindAndReplacePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#274#0" expanded="true" />
+            <element signature="e#349#371#0" expanded="true" />
+            <element signature="e#506#528#0" expanded="true" />
           </folding>
         </state>
       </provider>
