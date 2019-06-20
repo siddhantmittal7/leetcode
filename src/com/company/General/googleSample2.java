@@ -69,6 +69,8 @@ public class googleSample2 {
         return max;
     }
 
+
+
     public static void main(String[] args){
         int[] S = {2,3,6,1,9,4};
         int[] E = {5,7,8,10,11,7};
