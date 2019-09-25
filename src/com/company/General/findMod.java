@@ -5,42 +5,59 @@ import java.util.*;
 
 public class findMod {
 
-        public static List<String> junctionBoxSort(List<String> list) {
-
-                List<String> old = new ArrayList<String>();
-                List<String> newList = new ArrayList<String>();
-
-                for(int i=0;i<list.size();i++){
-                        String s = list.get(i);
-                        String[] arr = s.split(" ");
-                        if(arr[1].charAt(0) > 96){
-                                old.add(s);
-                        }else{
-                                newList.add(s);
-                        }
-                }
-
-                Collections.sort(old,new Comparator<String>(){
-                        @Override
-                        public int compare(final String lhs,String rhs) {
-                                String[] arrlhs = lhs.split(" ",2);
-                                String[] arrrhs = rhs.split(" ",2);
-                                if(arrlhs[1].equals(arrrhs[1])){
-                                        return arrlhs[0].compareTo(arrrhs[0]);
-                                }else{
-                                        return arrlhs[1].compareTo(arrrhs[1]);
-                                }
-                        }
-                });
-
-                List<String> returnList = new ArrayList<String>();
-
-                returnList.addAll(old);
-                returnList.addAll(newList);
-
-                return returnList;
-
-        }
+//        public static List<String> junctionBoxSort(List<String> list) {
+//
+//                List<String> old = new ArrayList<String>();
+//                List<String> newList = new ArrayList<String>();
+//
+//                for(int i=0;i<list.size();i++){
+//                        String s = list.get(i);
+//                        String[] arr = s.split(" ");
+//                        if(arr[1].charAt(0) > 96){
+//                                old.add(s);
+//                        }else{
+//                                newList.add(s);
+//                        }
+//                }
+//
+//                if(root == null)
+//                        return root;
+//
+//                if(root.val > R){
+//                        return trimBST(root.left,L,R);
+//                }
+//
+//                if(root.val < L){
+//                        return trimBST(root.right,L,R);
+//                }
+//
+//                root.left = trimBST(root.left, L, R);
+//
+//                root.right = trimBST(root.right,L,R);
+//
+//                return root;
+//
+//                Collections.sort(old,new Comparator<String>(){
+//                        @Override
+//                        public int compare(final String lhs,String rhs) {
+//                                String[] arrlhs = lhs.split(" ",2);
+//                                String[] arrrhs = rhs.split(" ",2);
+//                                if(arrlhs[1].equals(arrrhs[1])){
+//                                        return arrlhs[0].compareTo(arrrhs[0]);
+//                                }else{
+//                                        return arrlhs[1].compareTo(arrrhs[1]);
+//                                }
+//                        }
+//                });
+//
+//                List<String> returnList = new ArrayList<String>();
+//
+//                returnList.addAll(old);
+//                returnList.addAll(newList);
+//
+//                return returnList;
+//
+//        }
 
         public static int helper(int[] cost, int[] mem, int i){
                 if(mem[i] > -1)
@@ -1369,9 +1386,24 @@ public class findMod {
                 return count;
         }
 
+        public static class MyException extends Exception{
+
+                public MyException(){
+                        System.out.println("user not found");
+                }
+        }
+
+        public static class MyException2 extends Exception{
+
+                public MyException2(){
+                        System.out.println("user 2 not found");
+                }
+        }
+
+
         static HashMap<String,Integer> map = new HashMap<String,Integer>();
 
-        public static int helper(int[] values, boolean[] visited, int[] labels, int num_wanted, int use_limit,int len,int[] count){
+        public static int helper(int[] values, boolean[] visited, int[] labels, int num_wanted, int use_limit,int len,int[] count) throws MyException, MyException2{
 
                 if(len > num_wanted)
                         return 0;
@@ -1399,48 +1431,113 @@ public class findMod {
         }
 
 
-        public static int largestValsFromLabels(int[] values, int[] labels, int num_wanted, int use_limit) {
+//        public static int largestValsFromLabels(int[] values, int[] labels, int num_wanted, int use_limit) {
+//
+//                int high = 0;
+//                for(int i=0;i<labels.length;i++){
+//                        if(labels[i] > high)
+//                                high = labels[i];
+//                }
+//                int[] count = new int[high+1];
+//
+//                boolean[] visited = new boolean[values.length];
+//
+//                for(int i=0;i<labels.length;i++){
+//                        if(count[labels[i]] + 1 <= use_limit)
+//                                count[labels[i]]++;
+//                }
+//
+//                        int max = 0;
+//
+//                        for(int i = 0;i<values.length;i++){
+//                                if(!visited[i] && count[labels[i]] > 0){
+//                                        visited[i] = true;
+//                                        count[labels[i]]--;
+//                                        max = Math.max(max, values[i] + helper(values,visited,labels,num_wanted,use_limit,1,count));
+//                                        visited[i] = false;
+//                                        count[labels[i]]++;
+//                                }
+//                        }
+//
+//
+//
+//
+//
+//                return max;
+//        }
 
-                int high = 0;
-                for(int i=0;i<labels.length;i++){
-                        if(labels[i] > high)
-                                high = labels[i];
-                }
-                int[] count = new int[high+1];
+//        public static void sortOddEven(int[] list){
+//
+//                Arrays.sort(list,new Comparator<Integer>(){
+//                        @Override
+//                        public int compare(Integer lhs,Integer rhs) {
+//
+//
+//
+//                                String[] arrlhs = lhs.split(" ",2);
+//                                String[] arrrhs = rhs.split(" ",2);
+//                                if(arrlhs[1].equals(arrrhs[1])){
+//                                        return arrlhs[0].compareTo(arrrhs[0]);
+//                                }else{
+//                                        return arrlhs[1].compareTo(arrrhs[1]);
+//                                }
+//                        }
+//                });
+//        }
 
-                boolean[] visited = new boolean[values.length];
-
-                for(int i=0;i<labels.length;i++){
-                        if(count[labels[i]] + 1 <= use_limit)
-                                count[labels[i]]++;
-                }
-
-                        int max = 0;
-
-                        for(int i = 0;i<values.length;i++){
-                                if(!visited[i] && count[labels[i]] > 0){
-                                        visited[i] = true;
-                                        count[labels[i]]--;
-                                        max = Math.max(max, values[i] + helper(values,visited,labels,num_wanted,use_limit,1,count));
-                                        visited[i] = false;
-                                        count[labels[i]]++;
-                                }
-                        }
-
-
-
-
-
-                return max;
-        }
-
+//        public List<String> invalidTransactions(String[] transactions) {
+//                HashMap<String,HashMap<String,List<String[]>>> myMap = new HashMap<String,HashMap<String, List<String[]>>>();
+//
+//                for(String trans:transactions){
+//                        String[] arr = trans.split(",");
+//                        if(Integer.valueOf(arr[2]) > 1000){
+//                                continue;
+//                        }else{
+//                                if(myMap.containsKey(arr[0])){
+//                                        if(myMap.get(arr[0]).containsKey(arr[3])){
+//                                                List<String[]> myList= myMap.get(arr[0]).get(arr[3]);
+//                                                myList.add(arr);
+//                                        }else{
+//                                                List<String[]> myList = new ArrayList<String[]>();
+//                                                myList.add(arr);
+//                                                myMap.get(arr[0]).put(arr[3],myList);
+//                                        }
+//                                }else{
+//                                        HashMap<String,List<String[]>> tempMap = new HashMap<String,List<String[]>>();
+//                                        List<String[]> myList = new ArrayList<String[]>();
+//                                        myList.add(arr);
+//                                        tempMap.put(arr[3],myList);
+//                                        myMap.put(arr[0],tempMap);
+//                                }
+//                        }
+//                }
+//
+//                for(String e : myMap.keySet()){
+//
+//                }
+//        }
 
 
         public static void main(String[] args){
 
                         List<String> returnList = new ArrayList<String>();
 
-
+                Collections.sort(returnList, new Comparator<String>(){
+                        @Override
+                        public int compare(String s1, String s2){
+                                String[] s1_arr = s1.split(":");
+                                String[] s2_arr = s2.split(":");
+                                if(s1_arr[1].equals("start") && s2_arr[1].equals("start")){
+                                        return s1_arr[2].compareTo(s2_arr[2]);
+                                }else if(s1_arr[1].equals("start") && s2_arr[1].equals("end")){
+                                        return 1;
+                                }else if(s1_arr[1].equals("end") && s2_arr[1].equals("start")){
+                                        return -1;
+                                }else{
+                                        return s2_arr[2].compareTo(s1_arr[2]);
+                                }
+                        }
+                });
 //                        returnList.add("236 cat dog rabbit snake");
 //                        returnList.add("ykc 82 01");
 //                        returnList.add("eo first qpx");
@@ -1486,7 +1583,7 @@ public class findMod {
                         int[] values = {5,4,3,2,1};
                         int[] lables = {1,3,3,3,2};
 
-                        System.out.println(largestValsFromLabels(values,lables,3,2));
+                        //System.out.println(largestValsFromLabels(values,lables,3,2));
 
 //                        TreeNode node = new TreeNode(5);
 //                TreeNode node1 = new TreeNode(3);
